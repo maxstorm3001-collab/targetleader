@@ -83,10 +83,10 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
     border: 1px solid rgba(79,110,247,0.35);
     border-radius: 999px;
     padding: 6px 16px;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: 600;
     color: #a0b4ff;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 28px;
   }
@@ -232,20 +232,21 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
   .feature-item {
     background: var(--bg);
     border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 12px;
-    padding: 20px 22px;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 12px 12px 0;
+    padding: 16px 20px;
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    text-align: center;
+    flex-direction: row;
+    gap: 0;
+    align-items: flex-start;
+    text-align: left;
     transition: border-color 0.2s;
   }
-  .feature-item:hover { border-color: rgba(79,110,247,0.4); }
+  .feature-item:hover { border-color: rgba(79,110,247,0.6); border-left-color: var(--accent); }
 
-  .feature-item .fi { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
-  .feature-item strong { display: block; font-size: 14px; font-weight: 700; margin-bottom: 4px; text-align: center; }
-  .feature-item span { font-size: 13px; color: var(--muted); text-align: center; }
+  .feature-item .fi { display: none; }
+  .feature-item strong { display: block; font-size: 14px; font-weight: 700; margin-bottom: 4px; text-align: left; }
+  .feature-item span { font-size: 13px; color: var(--muted); text-align: left; }
 
   /* ── VIDEO ── */
   .video-wrap {
@@ -555,8 +556,8 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
 
     /* Hero */
     .hero { padding: 60px 16px 44px; min-height: 100svh; }
-    .badge { font-size: 11px; padding: 5px 12px; margin-bottom: 18px; }
-    .hero h1 { font-size: clamp(2rem, 11vw, 3rem); margin-bottom: 14px; }
+    .badge { font-size: 9px; padding: 4px 10px; margin-bottom: 18px; }
+    .hero h1 { font-size: clamp(3.2rem, 14vw, 4.2rem); margin-bottom: 14px; }
     .hero-sub { font-size: 14px; margin-bottom: 20px; }
     .hero-checks { gap: 5px 14px; margin-bottom: 28px; }
     .hero-checks span { font-size: 12px; }
@@ -1155,12 +1156,12 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
   <canvas id="starsCanvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.7"></canvas>
   <div class="badge">Клуб таргетологов Facebook / Instagram</div>
   <h1><span>ТАРГЕТ ЛИДЕР</span></h1>
-  <p class="hero-sub">Клуб, который помогает таргетологам быстрее расти, увереннее брать проекты и стабильно зарабатывать.</p>
+  <p class="hero-sub">Участники клуба закрывают 2-3 новых проекта в месяц<br>и выходят на доход от 1000$, работая по нашим связкам и урокам.</p>
   <div class="hero-checks">
     <span><span id="member-count">85</span>+ участников</span>
-    <span>Zoom-разборы проектов</span>
-    <span>База знаний и связок</span>
-    <span>Поиск клиентов и продажи услуг</span>
+    <span>50+ связок по нишам с обновлением</span>
+    <span>Уроки по поиску клиентов и продажам</span>
+    <span>Еженедельные Zoom-разборы</span>
   </div>
 </section>
 
@@ -1233,8 +1234,7 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
         <p>Застрял на одном уровне дохода и не понимаешь, как расти дальше</p>
       </div>
       <div class="pain-card">
-        <div class="pain-icon">🔍</div>
-        <p>Не знаешь, где брать клиентов, или боишься продавать свои услуги</p>
+                <p>Не знаешь, где брать клиентов, или боишься продавать свои услуги</p>
       </div>
       <div class="pain-card">
         <div class="pain-icon">🤯</div>
@@ -1266,19 +1266,16 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
     <p class="section-sub">Здесь есть ответы, поддержка и люди, которые уже прошли через то, где ты сейчас.</p>
     <div class="value-cards">
       <div class="value-card">
-        <div class="icon">💬</div>
-        <h3>Есть кого спросить</h3>
-        <p>Возник вопрос по проекту — пишешь в чат, и уже через пару минут получаешь ответ от тех, кто через это прошёл.</p>
+        <h3>Результат клиенту</h3>
+        <p>Связки по 50+ нишам с постоянным обновлением. Знаешь что запустить, чтобы сделать результат своему клиенту.</p>
       </div>
       <div class="value-card">
-        <div class="icon">📈</div>
-        <h3>Понятный путь к росту</h3>
-        <p>Смотришь как делают другие, берёшь рабочие схемы и применяешь. Не надо ничего изобретать с нуля.</p>
+        <h3>Поиск клиентов</h3>
+        <p>Уроки по поиску клиентов через таргет и другие каналы. Плюс участники передают проекты друг другу внутри клуба.</p>
       </div>
       <div class="value-card">
-        <div class="icon">🤝</div>
-        <h3>Клиенты внутри клуба</h3>
-        <p>Уроки по поиску клиентов через таргет и другие способы, уроки по продажам, готовые связки в 50+ нишах. Плюс участники знают друг друга и передают проекты между собой.</p>
+        <h3>Продажи</h3>
+        <p>Уроки по продажам своих услуг и скрипты. Участники закрывают 2-3 проекта в месяц, не работая с сарафанкой.</p>
       </div>
     </div>
   </div>
@@ -1323,26 +1320,26 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
     <h2 class="section-title">Всё, что нужно для роста</h2>
     <p class="section-sub">17 инструментов и форматов, от живого чата до базы креативов.</p>
     <div class="features-grid">
-      <div class="feature-item"><div class="fi">💬</div><div><strong>Чат клуба</strong><span>Живое общение, советы, быстрые решения и обмен опытом. Всегда есть, к кому обратиться.</span></div></div>
-      <div class="feature-item"><div class="fi">🔍</div><div><strong>Связки по нишам</strong><span>Разборы рекламных кабинетов под конкретные ниши: смотри, повторяй, получай результат.</span></div></div>
-      <div class="feature-item"><div class="fi">📞</div><div><strong>Скрипты продаж</strong><span>Переписки и записи созвонов для уверенного общения с клиентами.</span></div></div>
-      <div class="feature-item"><div class="fi">🎯</div><div><strong>Поиск клиентов</strong><span>Стратегии через таргет, рассылки и отклики. Понятная схема привлечения заказчиков.</span></div></div>
+      <div class="feature-item"><div class="fi">01</div><div><strong>Чат клуба</strong><span>Живое общение, советы, быстрые решения и обмен опытом. Всегда есть, к кому обратиться.</span></div></div>
+      <div class="feature-item"><div class="fi">02</div><div><strong>Связки по нишам</strong><span>Разборы рекламных кабинетов под конкретные ниши: смотри, повторяй, получай результат.</span></div></div>
+      <div class="feature-item"><div class="fi">03</div><div><strong>Скрипты продаж</strong><span>Переписки и записи созвонов для уверенного общения с клиентами.</span></div></div>
+      <div class="feature-item"><div class="fi">04</div><div><strong>Поиск клиентов</strong><span>Стратегии через таргет, рассылки и отклики. Понятная схема привлечения заказчиков.</span></div></div>
     </div>
     <div class="features-more" id="featuresMore">
       <div class="features-grid" style="margin-top:8px">
-      <div class="feature-item"><div class="fi">🧩</div><div><strong>Разборы проектов</strong><span>Еженедельные Zoom-встречи: ошибки, точки роста, вопросы по вашим кампаниям.</span></div></div>
-      <div class="feature-item"><div class="fi">📚</div><div><strong>База знаний</strong><span>Стратегии, аналитика, инструкции и чек-листы, всё структурировано.</span></div></div>
-      <div class="feature-item"><div class="fi">👥</div><div><strong>Тройки</strong><span>Мини-группы для регулярных созвонов и взаимной поддержки участников.</span></div></div>
-      <div class="feature-item"><div class="fi">🎨</div><div><strong>База креативов</strong><span>Примеры баннеров и видео по разным нишам для вдохновения и копирования.</span></div></div>
-      <div class="feature-item"><div class="fi">🗑️</div><div><strong>Чёрный список клиентов</strong><span>Поможет избежать проблемных проектов и сэкономить нервы.</span></div></div>
-      <div class="feature-item"><div class="fi">💸</div><div><strong>Складчина сервисов</strong><span>Экономия на инструментах за счёт совместных покупок участников.</span></div></div>
-      <div class="feature-item"><div class="fi">🤝</div><div><strong>Продажа лидов</strong><span>Передача заявок между участниками клуба за процент.</span></div></div>
-      <div class="feature-item"><div class="fi">👔</div><div><strong>Биржа вакансий</strong><span>Клиенты, подрядчики, подработки, всё в одном месте.</span></div></div>
-      <div class="feature-item"><div class="fi">🤖</div><div><strong>Промты ChatGPT</strong><span>Готовые промты для текстов, отчётов и анализа, экономят часы работы.</span></div></div>
-      <div class="feature-item"><div class="fi">🎥</div><div><strong>Зум-эфиры</strong><span>Разборы и мастермайнды с сохранёнными записями.</span></div></div>
-      <div class="feature-item"><div class="fi">🔧</div><div><strong>Типовые решения</strong><span>База по рабочим ситуациям: зашёл, нашёл, сделал.</span></div></div>
-      <div class="feature-item"><div class="fi">🗂️</div><div><strong>Отдельные чаты</strong><span>По ВКонтакте, контексту и серым нишам, для узкой экспертности.</span></div></div>
-      <div class="feature-item"><div class="fi">🎁</div><div><strong>Бонусные уроки</strong><span>Дополнительные материалы от участников клуба.</span></div></div>
+      <div class="feature-item"><div class="fi">05</div><div><strong>Разборы проектов</strong><span>Еженедельные Zoom-встречи: ошибки, точки роста, вопросы по вашим кампаниям.</span></div></div>
+      <div class="feature-item"><div class="fi">06</div><div><strong>База знаний</strong><span>Стратегии, аналитика, инструкции и чек-листы, всё структурировано.</span></div></div>
+      <div class="feature-item"><div class="fi">07</div><div><strong>Тройки</strong><span>Мини-группы для регулярных созвонов и взаимной поддержки участников.</span></div></div>
+      <div class="feature-item"><div class="fi">08</div><div><strong>База креативов</strong><span>Примеры баннеров и видео по разным нишам для вдохновения и копирования.</span></div></div>
+      <div class="feature-item"><div class="fi">09</div><div><strong>Чёрный список клиентов</strong><span>Поможет избежать проблемных проектов и сэкономить нервы.</span></div></div>
+      <div class="feature-item"><div class="fi">10</div><div><strong>Складчина сервисов</strong><span>Экономия на инструментах за счёт совместных покупок участников.</span></div></div>
+      <div class="feature-item"><div class="fi">11</div><div><strong>Продажа лидов</strong><span>Передача заявок между участниками клуба за процент.</span></div></div>
+      <div class="feature-item"><div class="fi">12</div><div><strong>Биржа вакансий</strong><span>Клиенты, подрядчики, подработки, всё в одном месте.</span></div></div>
+      <div class="feature-item"><div class="fi">13</div><div><strong>Промты ChatGPT</strong><span>Готовые промты для текстов, отчётов и анализа, экономят часы работы.</span></div></div>
+      <div class="feature-item"><div class="fi">14</div><div><strong>Зум-эфиры</strong><span>Разборы и мастермайнды с сохранёнными записями.</span></div></div>
+      <div class="feature-item"><div class="fi">15</div><div><strong>Типовые решения</strong><span>База по рабочим ситуациям: зашёл, нашёл, сделал.</span></div></div>
+      <div class="feature-item"><div class="fi">16</div><div><strong>Отдельные чаты</strong><span>По ВКонтакте, контексту и серым нишам, для узкой экспертности.</span></div></div>
+      <div class="feature-item"><div class="fi">17</div><div><strong>Бонусные уроки</strong><span>Дополнительные материалы от участников клуба.</span></div></div>
       </div>
     </div>
     <div style="text-align:center; margin-top:20px">
@@ -1362,11 +1359,11 @@ src="https://www.facebook.com/tr?id=836798669110822&ev=PageView&noscript=1"
     <h2 class="section-title">Почему таргетологи остаются в клубе месяцами?</h2>
     <div class="whystay-grid">
       <div class="whystay-item">
-        <div class="whystay-icon">⚡</div>
+        
         <p>В клубе нет бесполезной активности. Зашёл, нашёл решение, внедрил.</p>
       </div>
       <div class="whystay-item">
-        <div class="whystay-icon">👨‍💻</div>
+        
         <p>Помогают опытные участники, которые работают с клиентами прямо сейчас.</p>
       </div>
       <div class="whystay-item">
