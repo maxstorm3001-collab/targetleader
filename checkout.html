@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>Переход в клуб...</title>
+  <style>
+    body { margin: 0; background: #090b10; display: flex; align-items: center; justify-content: center; min-height: 100vh; font-family: sans-serif; }
+    .wrap { text-align: center; color: #fff; }
+    .spinner { width: 40px; height: 40px; border: 3px solid rgba(79,110,247,0.2); border-top-color: #4f6ef7; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 20px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    p { color: rgba(255,255,255,0.5); font-size: 15px; }
+  </style>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '836798669110822');
+    fbq('track', 'PageView');
+    fbq('track', 'Lead');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=836798669110822&ev=Lead&noscript=1"/></noscript>
+  <!-- End Facebook Pixel -->
+</head>
+<body>
+  <div class="wrap">
+    <div class="spinner"></div>
+    <p>Переходим в Telegram...</p>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.href = 'https://t.me/targetlider_club_bot?start=dl-1781536480e56c6a78d2b9';
+    }, 1500);
+  </script>
+</body>
+</html>
