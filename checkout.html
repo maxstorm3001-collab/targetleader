@@ -49,7 +49,7 @@
     setTimeout(function() {
       var utm = getStoredUtm();
       var params = new URLSearchParams();
-      params.set('domain', 'burzhtg.bothelp.io');
+      params.set('domain', 'burzhtg');
       params.set('start', 'dl-1781536480e56c6a78d2b9');
       Object.keys(utm).forEach(function(k) { params.set(k, utm[k]); });
       window.location.href = 'https://r.bothelp.io/tg?' + params.toString();
