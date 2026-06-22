@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(function(k) {
+    var v = params.get(k);
+    if (v) sessionStorage.setItem(k, v);
+  });
+})();
+</script>
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){

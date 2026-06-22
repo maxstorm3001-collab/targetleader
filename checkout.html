@@ -32,8 +32,24 @@
     <p>Переходим в Telegram...</p>
   </div>
   <script>
+    function getStoredUtm() {
+      var fromUrl = new URLSearchParams(window.location.search);
+      var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      var result = {};
+      keys.forEach(function(k) {
+        var val = fromUrl.get(k) || sessionStorage.getItem(k);
+        if (val) result[k] = val;
+      });
+      return result;
+    }
+
     setTimeout(function() {
-      window.location.href = 'https://t.me/targetlider_club_bot?start=dl-1781536480e56c6a78d2b9';
+      var utm = getStoredUtm();
+      var params = new URLSearchParams();
+      params.set('domain', 'burzhtg.bothelp.io');
+      params.set('start', 'dl-1781536480e56c6a78d2b9');
+      Object.keys(utm).forEach(function(k) { params.set(k, utm[k]); });
+      window.location.href = 'https://r.bothelp.io/tg?' + params.toString();
     }, 1500);
   </script>
 </body>
