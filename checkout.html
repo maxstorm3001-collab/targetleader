@@ -21,10 +21,6 @@
     (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '836798669110822');
     fbq('track', 'PageView');
-    if (!sessionStorage.getItem('fb_lead_sent')) {
-      fbq('track', 'Lead');
-      sessionStorage.setItem('fb_lead_sent', '1');
-    }
   </script>
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=836798669110822&ev=Lead&noscript=1"/></noscript>
   <!-- End Facebook Pixel -->
